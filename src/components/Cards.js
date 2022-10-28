@@ -1,6 +1,6 @@
 import { Modal,Button } from 'react-bootstrap';
 import React  from 'react';
-import '../components/styles.css/cards.css'
+import '../components/styles.css/cards.css';
 import AddNewProduct from './AddNewProduct';
 import Navbar from './Navbar';
 
