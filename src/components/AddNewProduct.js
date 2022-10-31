@@ -1,5 +1,5 @@
 import { Form, Button } from 'react-bootstrap';
-import Dropdown from 'react-bootstrap/Dropdown';
+// import Dropdown from 'react-bootstrap/Dropdown';
 
 const AddNewProduct = () =>{
     return(
@@ -30,7 +30,7 @@ const AddNewProduct = () =>{
             </Form.Group>
             <br></br>
             <Form.Group>
-                    <Dropdown>
+                    {/* <Dropdown>
                       <Dropdown.Toggle >
                         Category
                       </Dropdown.Toggle>
@@ -40,7 +40,13 @@ const AddNewProduct = () =>{
                         <Dropdown.Item href="#/action-2">Shoes For Men</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Shoes For Women</Dropdown.Item>
                       </Dropdown.Menu>
-                    </Dropdown>
+                    </Dropdown> */}
+                 <label>Category:</label>   
+                <select class="form-select">
+                <option selected>shoes for Kids</option>
+                <option value="1">Shoes for Men</option>
+                <option value="2">shoes for Women</option>
+            </select>
             </Form.Group>
             <br></br>
             <Form.Group>
@@ -53,7 +59,7 @@ const AddNewProduct = () =>{
             <br></br>
             <Form.Group>
                 <Form.Control 
-                    type="text"
+                    type="file"
                     placeholder="img"
                     
                 />
@@ -72,6 +78,7 @@ const AddNewProduct = () =>{
                <Form.Check name="status" label="In Stock" inline type="radio" />
                <Form.Check name="status" label="Temporary Out-of-stock" inline type="radio" />
                <Form.Check name="status" label="Not Available" inline type="radio" />
+
             </Form.Group>
             <br></br>
             <Button variant="success" type="submit" block>
